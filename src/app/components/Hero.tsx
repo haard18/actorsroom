@@ -46,7 +46,7 @@ export function Hero() {
             className="md:w-1/2 p-6 rounded-xl shadow-2xl border border-white/20 bg-white/10 backdrop-blur-md"
           >
             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-neutral-200">
-              <span className="text-red-400 font-semibold">Harshal Pawar</span>{" "}
+              <span className="text-[#f40000] font-semibold">Harshal Pawar</span>{" "}
               is a self-trained actor who has been working in the film industry
               for over a decade. With ten years of hands-on experience in front
               of the camera and behind the script, he has developed a deep
@@ -93,7 +93,7 @@ export function Hero() {
           >
             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-neutral-200">
               Through{" "}
-              <span className="text-red-400 font-semibold">
+              <span className="text-[#f40000] font-semibold">
                 The Actor’s Room
               </span>
               , his mission is to shape actors who are not just emotionally
