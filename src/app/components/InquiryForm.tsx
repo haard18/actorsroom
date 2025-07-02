@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 export default function InquiryForm() {
   const [formData, setFormData] = useState({
@@ -12,7 +14,7 @@ export default function InquiryForm() {
     message: '',
   });
 
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -21,38 +23,32 @@ export default function InquiryForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
+    setLoading(true);
 
     try {
-      const res = await fetch('/api/inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      await axios.post('/api/inquiry', formData);
+      toast.success('Inquiry submitted successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        phoneNumber: '',
+        typeOfCoaching: '',
+        location: '',
+        message: '',
       });
-
-      if (res.ok) {
-        setStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          phoneNumber: '',
-          typeOfCoaching: '',
-          location: '',
-          message: '',
-        });
-      } else {
-        throw new Error('Request failed');
-      }
     } catch (err) {
-        console.log('Error submitting inquiry:', err);
-      setStatus('error');
+      console.error(err);
+      toast.error('Something went wrong. Try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 bg-white dark:bg-neutral-900 rounded-xl shadow-lg space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-2xl mx-auto p-6 bg-white dark:bg-neutral-900 rounded-xl shadow-lg space-y-4 my-10 w-[90%]"
+    >
       <h2 className="text-2xl font-bold text-neutral-800 dark:text-white">Inquiry Form</h2>
 
       <input
@@ -96,7 +92,6 @@ export default function InquiryForm() {
         <option value="Personal">Personal</option>
         <option value="Group">Group</option>
         <option value="Online">Online</option>
-        {/* <option value="methodActing">Method Acting</option> */}
       </select>
 
       <input
@@ -121,13 +116,10 @@ export default function InquiryForm() {
       <button
         type="submit"
         className="bg-black text-white py-3 px-6 rounded-md hover:bg-neutral-800 disabled:opacity-50"
-        disabled={status === 'loading'}
+        disabled={loading}
       >
-        {status === 'loading' ? 'Sending...' : 'Send Inquiry'}
+        {loading ? 'Sending...' : 'Send Inquiry'}
       </button>
-
-      {status === 'success' && <p className="text-green-500">Inquiry submitted successfully!</p>}
-      {status === 'error' && <p className="text-red-500">Something went wrong. Please try again.</p>}
     </form>
   );
 }

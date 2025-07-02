@@ -1,35 +1,44 @@
 "use client";
 
 import React from "react";
-import { BackgroundLines } from "./ui/background-lines";
+// import { BackgroundLines } from "./ui/background-lines";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { LampContainer } from "./ui/lamp";
 
 export function Hero() {
   return (
     <>
       {/* Hero Header */}
-      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-center text-2xl md:text-4xl lg:text-7xl py-2 md:py-10 relative z-20 font-bold tracking-wider text-white drop-shadow-md"
-          style={{ fontFamily: "THEBOLDFONT" }}
+      <LampContainer>
+        <motion.h1
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text  text-white text-center text-4xl font-medium tracking-tight  md:text-7xl"
+        style={{fontFamily:"THEBOLDFONT"}}
         >
           The Actor&apos;s Room
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          style={{ fontFamily: "THEBOLDFONT" }}
-          className="max-w-xl mx-auto text-sm md:text-lg text-neutral-200 text-center"
+          
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.5,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="mt-4 text-white text-center text-xl md:text-3xl"
+          style={{ fontFamily: "Made-Mirage-Bold" }}
         >
-          For the Actor Who Thinks, Feels, and Transforms.
-        </motion.p>
-      </BackgroundLines>
+          For the Actor who Thinks, Feels and Transforms.
+        </motion.h2>
+      </LampContainer>
 
       {/* Section 1 - Text Left, Image Right */}
       <section className="bg-black text-white py-16 px-6 md:px-20">
@@ -46,7 +55,9 @@ export function Hero() {
             className="md:w-1/2 p-6 rounded-xl shadow-2xl border border-white/20 bg-white/10 backdrop-blur-md"
           >
             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-neutral-200">
-              <span className="text-[#f40000] font-semibold">Harshal Pawar</span>{" "}
+              <span className="text-[#f40000] font-semibold">
+                Harshal Pawar
+              </span>{" "}
               is a self-trained actor who has been working in the film industry
               for over a decade. With ten years of hands-on experience in front
               of the camera and behind the script, he has developed a deep

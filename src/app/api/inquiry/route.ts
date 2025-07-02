@@ -8,3 +8,8 @@ export async function POST(req: Request) {
   const newInquiry = await Inquiry.create(data);
   return NextResponse.json({ success: true, inquiry: newInquiry });
 }
+export async function GET(){
+  await connectDB();
+  const inquiries = await Inquiry.find();
+  return NextResponse.json({ success: true, inquiries });
+}

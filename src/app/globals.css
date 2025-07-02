@@ -19,7 +19,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "THEBOLDFONT-FREEVERSION";
   src: url("/assets/THEBOLDFONT-FREEVERSION.otf") format("opentype");
