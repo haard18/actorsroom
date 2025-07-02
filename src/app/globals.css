@@ -26,6 +26,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face{
+  font-family:"Made-Mirage-Regular";
+  src: url("/assets/MadeMirageRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Made-Mirage-Thin";
+  src: url("/assets/MadeMirageThin.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: var(--background);
   color: var(--foreground);

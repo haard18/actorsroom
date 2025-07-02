@@ -33,17 +33,18 @@ export function Hero() {
 
       {/* Section 1 - Text Left, Image Right */}
       <section className="bg-black text-white py-16 px-6 md:px-20">
-        <div className="flex flex-col md:flex-row items-center gap-10" style={{ fontFamily: 'THEBOLDFONT-FREEVERSION' }}>
+        <div className="flex flex-col-reverse md:flex-row items-center gap-10" style={{ fontFamily: 'Made-Mirage-Regular' }}>
           {/* Text Card */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="md:w-1/2 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-xl"
+            className="md:w-1/2 bg-white/10 backdrop-blur-md p-6 rounded-xl border shadow-xl border-white/20"
+            
           >
             <p className="text-base md:text-lg leading-relaxed text-neutral-200">
-              <span className="text-pink-400 font-semibold">Harshal Pawar</span> is a self-trained actor who has been working in the film industry for over a decade. With ten years of hands-on experience in front of the camera and behind the script, he has developed a deep understanding of performance, storytelling, and character.
+              <span className="text-red-400 font-semibold">Harshal Pawar</span> is a self-trained actor who has been working in the film industry for over a decade. With ten years of hands-on experience in front of the camera and behind the script, he has developed a deep understanding of performance, storytelling, and character.
               <br /><br />
               As a writer with a natural flair for narrative, Harshal brings a storyteller’s vision into every role and rehearsal room.
             </p>
@@ -58,11 +59,11 @@ export function Hero() {
             className="md:w-1/2"
           >
             <Image
-              src="/assets/images/hero.svg"
+              src="/assets/images/hero.jpg"
               alt="Harshal Pawar image"
               width={600}
               height={400}
-              className="rounded-xl shadow-2xl"
+              className="rounded-xl"
             />
           </motion.div>
         </div>
@@ -70,38 +71,38 @@ export function Hero() {
 
       {/* Section 2 - Image Left, Text Right */}
       <section className="bg-black text-white py-16 px-6 md:px-20">
-        <div className="flex flex-col md:flex-row-reverse items-center gap-10" style={{ fontFamily: 'THEBOLDFONT-FREEVERSION' }}>
+        <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-10" style={{ fontFamily: 'Made-Mirage-Regular' }}>
           {/* Text Card */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="md:w-1/2 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-xl"
+            className="md:w-1/2 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-xl"
           >
             <p className="text-base md:text-lg leading-relaxed text-neutral-200">
-              Through <span className="text-yellow-400 font-semibold">The Actor’s Room</span>, his mission is to shape actors who are not just emotionally honest but also intellectually sharp and practically equipped.
+              Through <span className="text-red-400 font-semibold">The Actor’s Room</span>, his mission is to shape actors who are not just emotionally honest but also intellectually sharp and practically equipped.
               <br /><br />
               He believes that an actor must be both a thinker and a doer, ready not just to perform but to understand, interpret, and transform. His teaching blends intuition with technique, discipline with creativity, and above all, passion with purpose.
             </p>
           </motion.div>
 
           {/* Image */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             className="md:w-1/2"
-          >
+            >
             <Image
               src="/assets/images/arw1.svg"
               alt="Harshal teaching"
+              layout='responsive'
               width={600}
               height={400}
-              className="rounded-xl shadow-2xl"
             />
-          </motion.div>
+            </motion.div>
         </div>
       </section>
     </>
