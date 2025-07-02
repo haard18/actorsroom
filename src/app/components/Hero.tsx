@@ -118,9 +118,8 @@ export function Hero() {
             <Image
               src="/assets/images/arw1.jpg"
               alt="Harshal teaching"
-              layout="responsive"
-              width={800}
-              height={500}
+              width={600}
+              height={400}
               className="rounded-xl"
             />
           </motion.div>
