@@ -64,7 +64,7 @@ export function Hero() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="md:w-1/2"
+            className=""
           >
             <Image
               src="/assets/images/hero.jpg"
@@ -113,7 +113,7 @@ export function Hero() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="md:w-1/2"
+            className=""
           >
             <Image
               src="/assets/images/arw1.jpg"
