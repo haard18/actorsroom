@@ -32,7 +32,7 @@ export function Hero() {
       </BackgroundLines>
 
       {/* Section 1 - Text Left, Image Right */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-black text-white py-16 px-6 md:px-20">
+      <section className="bg-black text-white py-16 px-6 md:px-20">
         <div className="flex flex-col md:flex-row items-center gap-10" style={{ fontFamily: 'THEBOLDFONT-FREEVERSION' }}>
           {/* Text Card */}
           <motion.div
@@ -69,7 +69,7 @@ export function Hero() {
       </section>
 
       {/* Section 2 - Image Left, Text Right */}
-      <section className="bg-gradient-to-tl from-black via-neutral-900 to-neutral-800 text-white py-16 px-6 md:px-20">
+      <section className="bg-black text-white py-16 px-6 md:px-20">
         <div className="flex flex-col md:flex-row-reverse items-center gap-10" style={{ fontFamily: 'THEBOLDFONT-FREEVERSION' }}>
           {/* Text Card */}
           <motion.div
