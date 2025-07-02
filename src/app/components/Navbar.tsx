@@ -15,23 +15,23 @@ import { useState } from "react";
 export function NavbarDemo() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Events",
+      link: "#events",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Testimonials",
+      link: "#testimonials",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Socials",
+      link: "#socials",
     },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full m-5">
+    <div className="relative w-full m-5" style={{ fontFamily: "Made-Mirage-Bold" }}>
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -73,6 +73,7 @@ export function NavbarDemo() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
+                style={{ fontFamily: "Made-Mirage-Thin" }}
               >
                 Book a call
               </NavbarButton>

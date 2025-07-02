@@ -69,8 +69,8 @@ export function Hero() {
             <Image
               src="/assets/images/hero.jpg"
               alt="Harshal Pawar image"
-              width={600}
-              height={400}
+              width={800}
+              height={500}
               className="rounded-xl"
             />
           </motion.div>
@@ -116,11 +116,11 @@ export function Hero() {
             className="md:w-1/2"
           >
             <Image
-              src="/assets/images/arw1.svg"
+              src="/assets/images/arw1.jpg"
               alt="Harshal teaching"
               layout="responsive"
-              width={600}
-              height={400}
+              width={800}
+              height={500}
               className="rounded-xl"
             />
           </motion.div>
