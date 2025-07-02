@@ -4,9 +4,9 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
+        "I really admire his way of teaching. He has a good amount of knowledge and it really helps you to think hard and bring the best in you.Actor’s room is the space that every aspiring actor should visit so I would definitely recommend the Actor’s room to all the acting students.",
+      name: "Riya Sharma",
+      designation: "Student",
       src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
