@@ -3,13 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-bold: "THEBOLDFONT", sans-serif;
+  --font-free: "THEBOLDFONT-FREEVERSION", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +13,19 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: "THEBOLDFONT";
+  src: url("/assets/THEBOLDFONT-FREEVERSION.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "THEBOLDFONT-FREEVERSION";
+  src: url("/assets/THEBOLDFONT-FREEVERSION.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: var(--background);
   color: var(--foreground);
