@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <NavbarDemo />
-      <main className="flex flex-col items-center justify-center w-full overflow-hidden">
+      <main className="flex flex-col items-center justify-center w-full bg-black overflow-hidden">
         <Hero />
 
-        <section id="events" className="w-full max-w-7xl px-4 md:px-8 mt-16">
+        <section id="events" className="w-full max-w-7xl px-4 md:px-8 mt-16 bg-black">
           <EventCard />
         </section>
 
@@ -29,9 +29,9 @@ export default function Home() {
 
         {/* Cram Logo Section */}
         <section className="w-full flex flex-col justify-center items-center py-10 bg-black">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center bg-black">
             <p
-              className="font-bold  tracking-tighter text-amber-400 text-center"
+              className="font-bold bg-black tracking-tighter text-amber-400 text-center"
               style={{ fontFamily: "arial" }}
             >
               Managed By
@@ -53,7 +53,7 @@ export default function Home() {
         </section>
       </main>
 
-      <section id="socials">
+      <section className="bg-black" id="socials">
         <Footer />
       </section>
     </>

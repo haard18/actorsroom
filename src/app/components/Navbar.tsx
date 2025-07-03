@@ -35,7 +35,7 @@ export function NavbarDemo() {
 
   return (
     <div
-      className="relative w-full px-4 md:px-8 py-4"
+      className="relative w-screen flex items-center justify-between px-4 py-2 bg-neutral-950 dark:bg-neutral-950 z-50"
       style={{ fontFamily: "Made-Mirage-Bold" }}
     >
       <Navbar>
