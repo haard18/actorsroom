@@ -20,7 +20,7 @@ export function Hero() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text  text-white text-center text-4xl font-medium tracking-normal md:text-7xl"
+            className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-white text-center text-4xl font-medium tracking-normal md:text-7xl"
             style={{ fontFamily: "THEBOLDFONT" }}
           >
             The Actor&apos;s Room
@@ -41,7 +41,7 @@ export function Hero() {
         </LampContainer>
 
         {/* Section 1 - Text Left, Image Right */}
-        <section className="bg-black text-white py-16 px-6 md:px-20">
+        <section className="bg-black text-white  px-6 md:px-20">
           <div
             className="flex flex-col-reverse md:flex-row items-center gap-10"
             style={{ fontFamily: "Made-Mirage-Bold" }}

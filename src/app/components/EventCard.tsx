@@ -22,27 +22,6 @@ export function EventCard() {
   );
 }
 
-const DummyContent = () => {
-  return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
-          The first rule of Apple club is that you boast about Apple club.
-        </span>{" "}
-        Keep a journal, quickly jot down a grocery list, and take amazing class
-        notes. Want to convert those notes to text? No problem. Langotiya jeetu
-        ka mara hua yaar is ready to capture every thought.
-      </p>
-      <Image
-        src="https://assets.aceternity.com/macbook.png"
-        alt="Macbook mockup from Aceternity UI"
-        height="500"
-        width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-      />
-    </div>
-  );
-};
 const Content = ({
   workshopName,
   description,
@@ -89,27 +68,15 @@ const data = [
   {
     category: "Acting Workshop",
     title: "Inaugural Acting Workshop",
-    src: "https://i.ibb.co/TMHpsJvq/actors-room-free-workshop.jpg",
+    src: "https://i.ibb.co/1wVf1z6/free-acting-workshop-website-thmbnl.jpg",
     content: (
       <Content
         workshopName="Inaugural Acting Workshop"
-        description="Join us for the inaugural acting workshop where you'll learn the basics of acting."
+        description="After the overwhelming response to our previous free acting workshop, we’ve decided to host another one for those who missed out. If you’re someone who wants a clear, no-pressure demo of our teaching style, this is the perfect chance to experience what The Actor’s Room is all about in person."
         workshopLocation="Online"
         src="https://i.ibb.co/TMHpsJvq/actors-room-free-workshop.jpg"
       />
     ),
   },
-  {
-    category: "Acting Workshop",
-    title: "Advanced Acting Techniques",
-    src: "https://i.ibb.co/TMHpsJvq/actors-room-free-workshop.jpg",
-
-    content: <DummyContent />,
-  },
-  {
-    category: "Acting Workshop",
-    title: "Improvisation Masterclass",
-    src: "https://i.ibb.co/TMHpsJvq/actors-room-free-workshop.jpg",
-    content: <DummyContent />,
-  },
+  
 ];

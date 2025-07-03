@@ -34,7 +34,10 @@ export function NavbarDemo() {
   const [isInquiryFormOpen, setIsInquiryFormOpen] = useState(false);
 
   return (
-    <div className="relative w-full m-5" style={{ fontFamily: "Made-Mirage-Bold" }}>
+    <div
+      className="relative w-full px-4 md:px-8 py-4"
+      style={{ fontFamily: "Made-Mirage-Bold" }}
+    >
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -115,4 +118,3 @@ export function NavbarDemo() {
     </div>
   );
 }
-

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <NavbarDemo />
-      <main className="flex flex-col items-center justify-center w-full overflow-hidden text-center">
+      <main className="flex flex-col items-center justify-center w-full overflow-hidden">
         <Hero />
 
         <section id="events" className="w-full max-w-7xl px-4 md:px-8 mt-16">
