@@ -13,7 +13,7 @@ export function EventCard() {
     <div className="w-full h-full py-20">
       <h2
         style={{ fontFamily: "THEBOLDFONT" }}
-        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 tracking-wider"
+        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white tracking-wider"
       >
         Upcoming Events
       </h2>
@@ -41,7 +41,7 @@ const Content = ({
       style={{ fontFamily: "Made-Mirage-Bold" }}
     >
       <p
-        className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto"
+        className="text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
       >
         <span className="font-bold  text-neutral-200">
           {workshopName}
