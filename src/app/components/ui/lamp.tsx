@@ -42,7 +42,27 @@ export const LampContainer = ({
           src="/assets/images/bg.png"
           alt="Background Image"
           fill
-          className="absolute inset-0 z-0 opacity-20 md:opacity-80 mt-10 object-cover object-center sm:object-top"
+          className="absolute inset-0 z-0 opacity-80 md:opacity-30 sm:opacity-80 mt-10 object-cover object-center sm:object-top"
+        />
+
+        {/* Left edge gradient */}
+        <div
+          className="pointer-events-none absolute left-0 top-0 h-full w-32 z-40"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.7) 60%, transparent 100%)",
+            filter: "blur(24px)",
+          }}
+        />
+
+        {/* Right edge gradient */}
+        <div
+          className="pointer-events-none absolute right-0 top-0 h-full w-32 z-40"
+          style={{
+            background:
+              "linear-gradient(to left, rgba(0,0,0,0.7) 60%, transparent 100%)",
+            filter: "blur(24px)",
+          }}
         />
 
         <motion.div
@@ -78,27 +98,21 @@ export const LampContainer = ({
           <div className="absolute  w-[100%] right-0 bg-black h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
         </motion.div>
 
-        <div className="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-[#f40000] opacity-50 blur-3xl"></div>
+        <div className="absolute inset-auto z-50 h-24 sm:h-36 w-64 sm:w-[28rem] -translate-y-1/2 rounded-full bg-[#f40000] opacity-50 blur-2xl sm:blur-3xl"></div>
+
         <motion.div
-          initial={{ width: "8rem" }}
+          initial={{ width: "6rem" }}
           whileInView={{ width: "16rem" }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-[#f40000] blur-2xl"
-        ></motion.div>
+          transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+          className="absolute inset-auto z-30 h-24 sm:h-36 w-48 sm:w-64 -translate-y-[4rem] sm:-translate-y-[6rem] rounded-full bg-[#f40000] blur-xl sm:blur-2xl"
+        />
+
         <motion.div
-          initial={{ width: "15rem" }}
-          whileInView={{ width: "30rem" }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-[#f40000] "
-        ></motion.div>
+          initial={{ width: "12rem" }}
+          whileInView={{ width: "20rem" }}
+          transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+          className="absolute inset-auto z-50 h-0.5 w-[20rem] sm:w-[30rem] -translate-y-[5rem] sm:-translate-y-[7rem] bg-[#f40000]"
+        />
 
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-black "></div>
       </div>

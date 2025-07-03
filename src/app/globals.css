@@ -5,6 +5,7 @@
   --foreground: #171717;
   --font-bold: "THEBOLDFONT", sans-serif;
   --font-free: "THEBOLDFONT-FREEVERSION", sans-serif;
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {

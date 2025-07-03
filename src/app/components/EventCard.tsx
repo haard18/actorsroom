@@ -3,7 +3,7 @@
 import React from "react";
 import { Carousel, Card } from "./ui/apple-cards-carousel";
 import Image from "next/image";
-
+import { FaMapPin } from "react-icons/fa";
 export function EventCard() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
@@ -49,8 +49,11 @@ const Content = ({
         {description}
       </p>
 
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4">
-        Location: <span className="font-semibold">{workshopLocation}</span>
+      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4 flex items-center gap-2">
+        <span className="font-semibold flex items-center gap-2">
+          <FaMapPin />
+          {workshopLocation}
+        </span>
       </p>
 
       {link && (
@@ -89,7 +92,7 @@ const data = [
       <Content
         workshopName="Free Acting Workshop"
         description="After the overwhelming response to our previous free acting workshop, we’ve decided to host another one for those who missed out. If you’re someone who wants a clear, no-pressure demo of our teaching style, this is the perfect chance to experience what The Actor’s Room is all about in person."
-        workshopLocation="RDX studio Bungalow number 191 Aram nagar part-2 near ambe mata mandir varsova mumbai"
+        workshopLocation="RDX studio Bungalow (previously: Creative Adda)"
         src="https://i.ibb.co/zMBgcZk/horizontal-for-cards.png"
         link="https://forms.gle/B9iY6CQs3E1qGEpM7"
       />

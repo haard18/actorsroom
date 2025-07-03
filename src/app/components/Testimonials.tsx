@@ -19,7 +19,7 @@ export function AnimatedTestimonialsDemo() {
     {
       quote:
         "We’ve worked with many creators but rarely seen the kind of genuine and raw response that students have towards Harshal and The Actor’s Room. There’s real trust here. People don’t just come to learn acting, they come to grow.",
-      name: "Soham Panwar",
+      name: "Soham Pawar",
       designation: "Founder- Cramstone Media",
       src: "https://i.ibb.co/pBNdT4fK/soham-pawar-testimonial.png",
     },
