@@ -28,12 +28,14 @@ const Content = ({
   workshopLocation,
   src,
   link,
+  time
 }: {
   workshopName: string;
   description: string;
   workshopLocation: string;
   src: string;
   link?: string;
+  time: string;
 }) => {
   return (
     <div
@@ -63,6 +65,9 @@ const Content = ({
         </span>
       </p>
 
+      <p className="text-neutral-400 text-sm md:text-base font-sans max-w-3xl mx-auto mt-4">
+        <span className="font-semibold">Time:</span> {time}
+      </p>
       {link && (
         <div className="flex justify-center mt-6">
           <a
@@ -75,7 +80,6 @@ const Content = ({
           </a>
         </div>
       )}
-
       <Image
         src={src}
         alt={workshopName}
@@ -102,6 +106,7 @@ const data = [
         workshopLocation="RDX studio Bungalow (previously: Creative Adda)"
         src="https://i.ibb.co/zMBgcZk/horizontal-for-cards.png"
         link="https://forms.gle/B9iY6CQs3E1qGEpM7"
+        time="Sunday 4-6pm, 5th July 2025"
       />
     ),
   },
