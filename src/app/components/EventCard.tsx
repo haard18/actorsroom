@@ -85,8 +85,8 @@ const Content = ({
 const data = [
   {
     category: "Workshops",
-    title: "Free Acting Workshop",
-    src: "https://i.ibb.co/1wVf1z6/free-acting-workshop-website-thmbnl.jpg",
+    title: "",
+    src: "https://i.ibb.co/p6JRX8mW/free-act-wrkshop-webs.jpg",
     content: (
 
       <Content
