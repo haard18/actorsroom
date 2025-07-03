@@ -41,10 +41,10 @@ export const LampContainer = ({
         <Image
           src="/assets/images/bg.png"
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 z-0 opacity-20 mt-10"
+          fill
+          className="absolute inset-0 z-0 opacity-20 md:opacity-80 mt-10 object-cover object-center sm:object-top"
         />
+
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}

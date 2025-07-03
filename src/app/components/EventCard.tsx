@@ -89,7 +89,7 @@ const data = [
       <Content
         workshopName="Free Acting Workshop"
         description="After the overwhelming response to our previous free acting workshop, we’ve decided to host another one for those who missed out. If you’re someone who wants a clear, no-pressure demo of our teaching style, this is the perfect chance to experience what The Actor’s Room is all about in person."
-        workshopLocation="Online"
+        workshopLocation="RDX studio Bungalow number 191 Aram nagar part-2 near ambe mata mandir varsova mumbai"
         src="https://i.ibb.co/zMBgcZk/horizontal-for-cards.png"
         link="https://forms.gle/B9iY6CQs3E1qGEpM7"
       />
