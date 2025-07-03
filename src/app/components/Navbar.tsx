@@ -71,7 +71,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative  text-neutral-300"
               >
                 <span className="block">{item.name}</span>
               </a>
@@ -102,9 +102,9 @@ export function NavbarDemo() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-lg"
           >
-            <div className="relative bg-white dark:bg-neutral-900 rounded-xl shadow-lg p-6 max-w-2xl w-[80%]">
+            <div className="relative bg-neutral-900 rounded-xl shadow-lg p-6 max-w-2xl w-[80%]">
               <button
-                className="absolute top-4 right-4 text-neutral-800 dark:text-white"
+                className="absolute top-4 right-4 text-white"
                 onClick={() => setIsInquiryFormOpen(false)}
               >
                 Close
