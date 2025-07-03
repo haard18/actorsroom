@@ -27,11 +27,13 @@ const Content = ({
   description,
   workshopLocation,
   src,
+  link,
 }: {
   workshopName: string;
   description: string;
   workshopLocation: string;
   src: string;
+  link?: string;
 }) => {
   return (
     <div
@@ -39,7 +41,6 @@ const Content = ({
       style={{ fontFamily: "Made-Mirage-Bold" }}
     >
       <p
-        style={{ fontFamily: "Made-Mirage-Bold" }}
         className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto"
       >
         <span className="font-bold text-neutral-700 dark:text-neutral-200">
@@ -47,34 +48,50 @@ const Content = ({
         </span>{" "}
         {description}
       </p>
-      <p
-        style={{ fontFamily: "Made-Mirage-Bold" }}
-        className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4"
-      >
+
+      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4">
         Location: <span className="font-semibold">{workshopLocation}</span>
       </p>
+
+      {link && (
+        <div className="flex justify-center mt-6">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-neutral-900 transition-colors"
+          >
+            Register Now
+          </a>
+        </div>
+      )}
+
       <Image
         src={src}
-        alt="Macbook mockup from Aceternity UI"
-        height="500"
-        width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+        alt={workshopName}
+        width={900}
+        height={900}
+        layout="responsive"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-8"
       />
     </div>
   );
 };
 
+
 const data = [
   {
-    category: "Acting Workshop",
-    title: "Inaugural Acting Workshop",
+    category: "Workshops",
+    title: "Free Acting Workshop",
     src: "https://i.ibb.co/1wVf1z6/free-acting-workshop-website-thmbnl.jpg",
     content: (
+
       <Content
-        workshopName="Inaugural Acting Workshop"
+        workshopName="Free Acting Workshop"
         description="After the overwhelming response to our previous free acting workshop, we’ve decided to host another one for those who missed out. If you’re someone who wants a clear, no-pressure demo of our teaching style, this is the perfect chance to experience what The Actor’s Room is all about in person."
         workshopLocation="Online"
-        src="https://i.ibb.co/TMHpsJvq/actors-room-free-workshop.jpg"
+        src="https://i.ibb.co/zMBgcZk/horizontal-for-cards.png"
+        link="https://forms.gle/B9iY6CQs3E1qGEpM7"
       />
     ),
   },

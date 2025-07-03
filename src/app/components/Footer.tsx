@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 
 export function Footer() {
   return (
@@ -11,12 +11,12 @@ export function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10"
+        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between text-center md:text-left gap-16 md:gap-20"
       >
         {/* Brand Info */}
         <div className="space-y-3">
           <h3 className="text-xl font-bold tracking-wider">The Actor&apos;s Room</h3>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 max-w-xs">
             For the actor who thinks, feels, and transforms.
           </p>
         </div>
@@ -26,9 +26,8 @@ export function Footer() {
           <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm text-gray-400">
             <li><a href="#" className="hover:text-white transition-all">Home</a></li>
-            <li><a href="#about" className="hover:text-white transition-all">About</a></li>
+            <li><a href="#testimonials" className="hover:text-white transition-all">Testimonials</a></li>
             <li><a href="#events" className="hover:text-white transition-all">Events</a></li>
-            <li><a href="#contact" className="hover:text-white transition-all">Contact</a></li>
           </ul>
         </div>
 
@@ -36,13 +35,10 @@ export function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-3">Connect</h4>
           <div className="flex space-x-4 text-gray-400 text-xl">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="https://www.instagram.com/the_actors_room" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <FaInstagram />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              <FaFacebook />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="https://www.youtube.com/@the_actors_room" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <FaYoutube />
             </a>
           </div>

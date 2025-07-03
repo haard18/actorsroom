@@ -7,36 +7,23 @@ export function AnimatedTestimonialsDemo() {
         "I really admire his way of teaching. He has a good amount of knowledge and it really helps you to think hard and bring the best in you.Actor’s room is the space that every aspiring actor should visit so I would definitely recommend the Actor’s room to all the acting students.",
       name: "Riya Sharma",
       designation: "Student",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "https://i.ibb.co/gM8f2Dy9/riya-sharma-testimonial.png",
+    },
+    {
+      quote: `I feel truly fortunate to have learned from Harshal Pawar — a dedicated teacher and exceptional actor. His approach, rooted in techniques like Chekhov, Meisner, Stella Adler, and Indian Natyashastra, made each session a deep dive into the craft. What truly sets him apart is his personal investment in each student’s growth, offering tailored feedback and ensuring no one is left behind. His recorded class performances helped us track progress, and his thoughtful assignments pushed us to grow.`,
+
+      name: "Lipika",
+      designation: "Student",
+      src: "https://i.ibb.co/fbp4bHL/lipika-testimonial.png",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "We’ve worked with many creators but rarely seen the kind of genuine and raw response that students have towards Harshal and The Actor’s Room. There’s real trust here. People don’t just come to learn acting, they come to grow.",
+      name: "Soham Panwar",
+      designation: "Founder- Cramstone Media",
+      src: "https://i.ibb.co/pBNdT4fK/soham-pawar-testimonial.png",
     },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+    
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 }
