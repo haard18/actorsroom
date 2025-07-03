@@ -25,5 +25,5 @@ export function AnimatedTestimonialsDemo() {
     },
     
   ];
-  return <AnimatedTestimonials testimonials={testimonials} />;
+  return <AnimatedTestimonials testimonials={testimonials} autoplay={true} />;
 }

@@ -5,6 +5,7 @@ import { AnimatedTestimonialsDemo } from "./components/Testimonials";
 import InquiryForm from "./components/InquiryForm";
 import { Footer } from "./components/Footer";
 
+
 export default function Home() {
   return (
     <>
@@ -26,7 +27,25 @@ export default function Home() {
             <InquiryForm />
           </div>
         </section>
+
+        {/* Cram Logo Section */}
+        {/* Cram Logo Section */}
+        <section className="w-full flex justify-center items-center py-10 bg-black">
+          <div className="flex flex-row items-center">
+            <p className="font-bold mb-0 tracking-tighter" style={{ fontFamily: "arial" }}>
+              Managed By
+            </p>
+            <img
+              src="/assets/images/cram.png"
+              alt="Cram Logo"
+              width={200}
+              height={200}
+              className="w-50 h-50 rounded-full shadow-xl"
+            />
+          </div>
+        </section>
       </main>
+
       <section id="socials">
         <Footer />
       </section>

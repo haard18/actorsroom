@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico", // Updated to use the correct path for the favicon
+  },
   title: "The Actor's Room",
   description: "An immersive platform for actors to explore, learn, and connect through workshops, events, and community.",
 };
@@ -24,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

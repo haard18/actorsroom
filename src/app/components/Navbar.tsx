@@ -39,7 +39,6 @@ export function NavbarDemo() {
       style={{ fontFamily: "Made-Mirage-Bold" }}
     >
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
