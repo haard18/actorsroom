@@ -32,7 +32,7 @@ export default function Home() {
         {/* Cram Logo Section */}
         <section className="w-full flex justify-center items-center py-10 bg-black">
           <div className="flex flex-row items-center">
-            <p className="font-bold mb-0 tracking-tighter" style={{ fontFamily: "arial" }}>
+            <p className="font-bold mb-0 tracking-tighter text-amber-400" style={{ fontFamily: "arial" }}>
               Managed By
             </p>
             <img
