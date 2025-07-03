@@ -46,24 +46,24 @@ export const LampContainer = ({
         />
 
         {/* Left edge gradient */}
-        <div
+        {/* <div
           className="pointer-events-none absolute left-0 top-0 h-full w-32 z-40"
           style={{
             background:
               "linear-gradient(to right, rgba(0,0,0,0.7) 60%, transparent 100%)",
             filter: "blur(24px)",
           }}
-        />
+        /> */}
 
         {/* Right edge gradient */}
-        <div
+        {/* <div
           className="pointer-events-none absolute right-0 top-0 h-full w-32 z-40"
           style={{
             background:
               "linear-gradient(to left, rgba(0,0,0,0.7) 60%, transparent 100%)",
             filter: "blur(24px)",
           }}
-        />
+        /> */}
 
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
@@ -78,8 +78,8 @@ export const LampContainer = ({
           }}
           className="absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-red-500 via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
         >
-          <div className="absolute  w-[100%] left-0 bg-black h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
-          <div className="absolute  w-40 h-[100%] left-0 bg-black  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
+          {/* <div className="absolute  w-[100%] left-0 bg-black h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+          <div className="absolute  w-40 h-[100%] left-0 bg-black  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" /> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
@@ -94,8 +94,8 @@ export const LampContainer = ({
           }}
           className="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-red-500 text-white [--conic-position:from_290deg_at_center_top]"
         >
-          <div className="absolute  w-40 h-[100%] right-0 bg-black  bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
-          <div className="absolute  w-[100%] right-0 bg-black h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+          {/* <div className="absolute  w-40 h-[100%] right-0 bg-black  bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
+          <div className="absolute  w-[100%] right-0 bg-black h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" /> */}
         </motion.div>
 
         <div className="absolute inset-auto z-50 h-24 sm:h-36 w-64 sm:w-[28rem] -translate-y-1/2 rounded-full bg-[#f40000] opacity-50 blur-2xl sm:blur-3xl"></div>
