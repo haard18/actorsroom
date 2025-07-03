@@ -14,24 +14,60 @@ type Inquiry = {
 export default function InquiriesPage() {
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
   const [loading, setLoading] = useState(true);
+  const [authenticated, setAuthenticated] = useState(false);
+  const [password, setPassword] = useState("");
+
+  const handlePasswordSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (password === "sohampawar123") {
+      setAuthenticated(true);
+    } else {
+      alert("Incorrect password");
+    }
+  };
 
   useEffect(() => {
-    async function fetchInquiries() {
-      try {
-        const response = await fetch('/api/inquiry');
-        const data = await response.json();
-        if (data.success) {
-          setInquiries(data.inquiries);
+    if (authenticated) {
+      async function fetchInquiries() {
+        try {
+          const response = await fetch('/api/inquiry');
+          const data = await response.json();
+          if (data.success) {
+            setInquiries(data.inquiries);
+          }
+        } catch (error) {
+          console.error('Error fetching inquiries:', error);
+        } finally {
+          setLoading(false);
         }
-      } catch (error) {
-        console.error('Error fetching inquiries:', error);
-      } finally {
-        setLoading(false);
       }
-    }
 
-    fetchInquiries();
-  }, []);
+      fetchInquiries();
+    }
+  }, [authenticated]);
+
+  if (!authenticated) {
+    return (
+      <div className="max-w-md mx-auto mt-20 p-4 border rounded shadow">
+        <h1 className="text-2xl font-bold mb-4">Enter Password</h1>
+        <form onSubmit={handlePasswordSubmit}>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full px-4 py-2 border rounded mb-4"
+            placeholder="Password"
+          />
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
