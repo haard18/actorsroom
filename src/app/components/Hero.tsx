@@ -23,7 +23,7 @@ export function Hero() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
-                className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-white text-center text-4xl font-medium tracking-normal md:text-7xl"
+                className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-white text-center text-4xl font-medium tracking-normal md:text-7xl mt-8 md:mt-0"
                 style={{ fontFamily: "THEBOLDFONT" }}
               >
                 The Actor&apos;s Room

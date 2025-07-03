@@ -52,7 +52,14 @@ const Content = ({
       <p className="text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4 flex items-center gap-2">
         <span className="font-semibold flex items-center gap-2">
           <FaMapPin />
-          {workshopLocation}
+          <a
+        href={`https://maps.app.goo.gl/ePKQ6KxdBYUeDwJR8`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:text-white transition-colors"
+          >
+        {workshopLocation}
+          </a>
         </span>
       </p>
 

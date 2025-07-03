@@ -84,7 +84,7 @@ export function NavbarDemo() {
                 }}
                 variant="primary"
                 className="w-full"
-                style={{ fontFamily: "Made-Mirage-Thin" }}
+                style={{ fontFamily: "Made-Mirage-Bold" }}
               >
                 Book a call
               </NavbarButton>
