@@ -28,27 +28,25 @@ export default function Home() {
         </section>
 
         {/* Cram Logo Section */}
-        {/* Cram Logo Section */}
-        <section className="w-full flex justify-center items-center py-10 bg-black">
-          <div className="flex flex-row items-center">
+        <section className="w-full flex flex-col justify-center items-center py-10 bg-black">
+          <div className="flex flex-col items-center">
+            <p
+              className="font-bold  tracking-tighter text-amber-400 text-center"
+              style={{ fontFamily: "arial" }}
+            >
+              Managed By
+            </p>
             <a
               href="https://instagram.com/cramstone.media"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p
-                className="font-bold mb-0 tracking-tighter text-amber-400"
-                style={{ fontFamily: "arial" }}
-              >
-                Managed By
-              </p>
-
               <img
                 src="/assets/images/cram.png"
                 alt="Cram Logo"
                 width={200}
                 height={200}
-                className="w-50 h-50 rounded-full shadow-xl"
+                className="w-50 h-50 rounded-full shadow-xl mx-auto"
               />
             </a>
           </div>
