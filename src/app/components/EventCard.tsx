@@ -106,7 +106,7 @@ const data = [
         workshopLocation="RDX studio Bungalow (previously: Creative Adda)"
         src="https://i.ibb.co/zMBgcZk/horizontal-for-cards.png"
         link="https://forms.gle/B9iY6CQs3E1qGEpM7"
-        time="Sunday 4-6pm, 5th July 2025"
+        time="Sunday 4-6pm, 6th July 2025"
       />
     ),
   },
